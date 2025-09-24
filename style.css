@@ -33,3 +33,47 @@ p {
   max-height: 190%; /* billede skalerer inde i footeren */
   width: auto;
 }
+
+.overskrift {
+  text-align: center;
+  margin-right: 850px;
+}
+
+.produkt-detalje {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.produkt-detalje img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.produkt-detalje .pris {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+.produkt-detalje button {
+  background: #ff3366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.produkt-detalje button:hover {
+  background: #e62e5c;
+}
