@@ -1,0 +1,35 @@
+h1 {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 130px;
+  margin-top: 100px;
+}
+h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.footer {
+  background-color: rgb(126, 65, 65);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 150px;
+}
+
+.footer img {
+  max-height: 190%; /* billede skalerer inde i footeren */
+  width: auto;
+}

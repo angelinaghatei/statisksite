@@ -1,0 +1,119 @@
+.produktliste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.produktliste a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.side-container {
+  display: grid;
+  gap: inherit;
+  padding: 20px;
+  grid-template-columns: subgrid;
+  grid-column: 1/-1;
+}
+
+.produktkort {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.produktkort:hover {
+  transform: scale(1.02); /* lille hover-effekt */
+}
+
+.produktkort img {
+  width: 100%;
+  height: 400px; /* fast højde */
+  object-fit: cover; /* beskærer billedet */
+  display: block;
+}
+
+.produktkort .info {
+  padding: 10px;
+  font-size: 14px;
+  text-align: left; /* bevarer venstrestilling */
+  margin-right: 40px;
+}
+
+.produktkort h2,
+.produktkort p {
+  margin-left: 15px; /* rykker teksten lidt mod højre */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.produktkort p {
+  margin-bottom: 40px; /* luft ned til bunden af kortet */
+}
+
+.sold_out {
+  position: relative; /* gør absolut positionering af .udsolgt_tekst mulig */
+}
+
+.udsolgt_tekst {
+  position: absolute;
+  top: 50%; /* midt på billedet lodret */
+  left: 50%; /* midt på billedet vandret */
+  transform: translate(-50%, -50%) rotate(-20deg); /* centrer + roter */
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  pointer-events: none; /* så den ikke blokkerer klik */
+}
+
+.kategori {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.kategori a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.kategori-container {
+  display: grid;
+  gap: inherit;
+  padding: 20px;
+  grid-template-columns: subgrid;
+  grid-column: 1/-1;
+}
+
+.kategori-style {
+  background: rgb(126, 65, 65);
+  border: 1px solid #000000;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.kategori-style .info {
+  padding: 10px;
+  font-size: 14px;
+  text-align: left; /* bevarer venstrestilling */
+  margin-right: 40px;
+}
+
+.kategori-style:hover {
+  transform: scale(1.02); /* lille hover-effekt */
+}
