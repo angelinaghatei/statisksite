@@ -23,7 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Kdam+Thmor+Pro&family=Kelly+Slab&family=Kumbh+Sans:wght@100..900&display=swap"
         rel="stylesheet">
-    <title>Forside</title>
+    <title>Produktliste</title>
 </head>
 
 <body>
@@ -46,20 +46,13 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Kategorier</h1>
-            <article class="kategori">
-                <article class="kategori-container"> </article>
-            </article>
-
-
-            <section id="product_list_container" class="produktliste side-container">
-
-            </section>
+        <h1>Produkter</h1>
+        <!-- Container som JS fylder med produkter -->
+        <section class="produktliste side-container"></section>
+        <!-- Produkterne bliver indsat her af showProducts() -->
         </section>
-        <script src=" menu.js">
-        </script>
-        <script src="index.js"></script>
+        <script src="list.js"></script>
+        <script src="menu.js"></script>
         <footer class="footer">
             <img src="img/logo.webp" alt="logo">
         </footer>
